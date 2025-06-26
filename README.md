@@ -14,10 +14,11 @@ To address the 285 genes from the MANE gene annotation in GRCh38 are missing in 
 
     Entries to add: `changes/1_synonyms_add.csv`
 
+Following step 1, 107 MANE genes remain unaccounted for. The current CHM13 annotation was derived by lifting over RefSeq annotations from GRCh38. We similarly lifted over the MANE annotation and examined whether these missing genes could be mapped onto CHM13.
+
 2.  Recovering 107 remaining MANE genes
 
-    Following step 1, 107 MANE genes remain unaccounted for. The current CHM13 annotation was derived by lifting over RefSeq annotations from GRCh38. We similarly lifted over the MANE annotation and examined whether these missing genes could be mapped onto CHM13.
-    Three of the missing MANE genes exactly overlapped with existing LOC genes in CHM13. Although these LOC genes are not listed as synonyms in [HUGO](https://www.genenames.org/) or [NCBI](https://www.ncbi.nlm.nih.gov/gene), we believe the sequence similarity is sufficient to replace the LOC entries with the corresponding MANE genes.
+    3 of the missing MANE genes exactly overlapped with existing LOC genes in CHM13. Although these LOC genes are not listed as synonyms in [HUGO](https://www.genenames.org/) or [NCBI](https://www.ncbi.nlm.nih.gov/gene), we believe the sequence similarity is sufficient to replace the LOC entries with the corresponding MANE genes.
 
     Entries to remove: `changes/2_exact_remove.csv`
 
@@ -25,7 +26,7 @@ To address the 285 genes from the MANE gene annotation in GRCh38 are missing in 
 
 3. Resolve conflicts between MANE and overlapping LOC genes
 
-    7 MANE genes were missing because a separate LOC gene was already annotated at the same or overlapping location. In these cases, we remove the LOC gene and replace it with the corresponding MANE gene using the lifted-over coordinates.
+    7 MANE genes were missing because a separate LOC gene was already annotated at the same or overlapping location. Unlike 2 In these cases, we remove the LOC gene and replace it with the corresponding MANE gene using the lifted-over coordinates.
 
     Entries to remove: `changes/3_standard_loc_remove.csv`
 
