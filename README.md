@@ -20,6 +20,7 @@ To address the 285 genes from the MANE gene annotation in GRCh38 are missing in 
     Three of the missing MANE genes exactly overlapped with existing LOC genes in CHM13. Although these LOC genes are not listed as synonyms in [HUGO](https://www.genenames.org/) or [NCBI](https://www.ncbi.nlm.nih.gov/gene), we believe the sequence similarity is sufficient to replace the LOC entries with the corresponding MANE genes.
 
     Entries to remove: `changes/2_exact_remove.csv`
+
     Entries to add: `changes/2_exact_add.csv`
 
 3. Resolve conflicts between MANE and overlapping LOC genes
@@ -39,6 +40,7 @@ To address the 285 genes from the MANE gene annotation in GRCh38 are missing in 
     Entries to add: `changes/4_fusion_add.csv`
 
 5. Resolve conflicts with non-LOC (standard) genes
+
     36 MANE genes were missing because a different standard gene (not a LOC gene) was already annotated in the same location.
     If the existing CHM13 gene is not included in MANE, we replace it with the MANE gene. If it is in MANE, we retain the CHM13 gene and still add the corresponding MANE gene.
 
@@ -47,6 +49,7 @@ To address the 285 genes from the MANE gene annotation in GRCh38 are missing in 
     Entries to add: `changes/5_standard_add.csv`
 
 6. Resolves conflicts within gene family
+
     71 MANE genes were missing due to the presence of another gene from the same gene family already annotated in CHM13. In these cases, we replace the existing gene with the corresponding MANE gene using liftover coordinates.
 
     Entries to remove: `changes/6_family_remove.csv`
