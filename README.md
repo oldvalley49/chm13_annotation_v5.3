@@ -28,23 +28,23 @@ Following step 1, 107 MANE genes remain unaccounted for. The current CHM13 annot
 
     In 4 cases, MANE genes were absent because a fusion gene occupied the locus. We propose removing the fusion gene and replacing it with the corresponding MANE gene.
 
-    Entries to remove: `changes/4_fusion_remove.csv`
+    Entries to remove: `changes/3_fusion_remove.csv`
 
-    Entries to add: `changes/4_fusion_add.csv`
+    Entries to add: `changes/3_fusion_add.csv`
 
 4. Resolve conflicts with non-LOC (standard) genes
 
     36 MANE genes were missing because a different standard gene (not a LOC gene) was already annotated in the same location.
     If the existing CHM13 gene is not included in MANE, we replace it with the MANE gene. If it is in MANE, we retain the CHM13 gene and still add the corresponding MANE gene.
 
-    Entries to remove: `changes/5_standard_remove.csv`
+    Entries to remove: `changes/4_standard_remove.csv`
 
-    Entries to add: `changes/5_standard_add.csv`
+    Entries to add: `changes/4_standard_add.csv`
 
 5. Resolves conflicts within gene family
 
     71 MANE genes were missing due to the presence of another gene from the same gene family already annotated in CHM13. In these cases, we replace the existing gene with the corresponding MANE gene using liftover coordinates.
 
-    Entries to remove: `changes/6_family_remove.csv`
+    Entries to remove: `changes/5_family_remove.csv`
 
-    Entries to add: `changes/6_family_add.csv`
+    Entries to add: `changes/5_family_add.csv`
