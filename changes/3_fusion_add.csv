@@ -1,6 +1,6 @@
 ,gene,chromosome,start,end,strand,biotype
-113,MTCL3,chr6,128661900,128708261,-,protein_coding
-211,ZFTRAF1,chr8,145619340,145632631,-,protein_coding
-213,TMEM276,chr8,145633584,145635248,-,protein_coding
-433,GPRASP3,chrX,101165691,101198489,+,protein_coding
-371,TBC1D3C,chr17,60876851,60887809,-,protein_coding
+113,MTCL3,chr6,128661901,128708261,-,protein_coding
+211,ZFTRAF1,chr8,145619341,145632631,-,protein_coding
+213,TMEM276,chr8,145633585,145635248,-,protein_coding
+433,GPRASP3,chrX,101165692,101198489,+,protein_coding
+371,TBC1D3C,chr17,60876852,60887809,-,protein_coding
