@@ -13,4 +13,3 @@ mapped_df = mapped.attributes_to_columns()
 JHU_columns = set(JHU_df.columns)
 mapped_columns = set(mapped_df.columns)
 
-common = JHU_
