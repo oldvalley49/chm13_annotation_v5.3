@@ -1,7 +1,2 @@
-,chromosome,gene_add,start_add,end_add,strand_add,biotype_add,gene_remove,start_remove,end_remove,strand_remove,biotype_remove,overlap,overlap_percentage_add,overlap_percentage_remove,synonym,ORF_add,LOC_add,Standard_add,ORF_remove,LOC_remove,Standard_remove
-113,chr6,MTCL3,128661900,128708261,-,protein_coding,SOGA3-KIAA0408,128627331,128708261,-,lncRNA,46361,1.0,0.5728530829111578,False,False,False,True,False,False,True
-211,chr8,ZFTRAF1,145619340,145632631,-,protein_coding,LOC84773-CYHR1,145619689,145635248,-,protein_coding,12942,0.9737416296742156,0.8318015296612893,False,False,False,True,False,True,False
-213,chr8,TMEM276,145633584,145635248,-,protein_coding,LOC84773-CYHR1,145619689,145635248,-,protein_coding,1664,1.0,0.10694774728452985,False,False,False,True,False,True,False
-433,chrX,GPRASP3,101165691,101198489,+,protein_coding,ARMCX5-GPRASP2,101044302,101353019,+,protein_coding,32798,1.0,0.10623969525487745,False,False,False,True,False,False,True
-371,chr17,TBC1D3C,60876851,60887809,-,protein_coding,TBC1D3P1-DHX40P1,60831098,60887781,-,transcribed_pseudogene,10930,0.9974447891951086,0.19282677345941465,False,False,False,True,False,False,True
-
+,chromosome,gene_add,start_add,end_add,strand_add,biotype_add,gene_remove,start_remove,end_remove,strand_remove,biotype_remove,overlap,overlap_percentage_add,overlap_percentage_remove,synonym,ORF_add,LOC_add,Standard_add,ORF_remove,LOC_remove,Standard_remove,ID_remove,ID_add,overlapping_in_MANE,gene_add_protein_length,gene_remove_protein_length,gene_remove_in_MANE
+1,chr17,TBC1D3C,60876852,60887809,-,protein_coding,TBC1D3P1-DHX40P1,60831099,60887781,-,transcribed_pseudogene,10930,0.9974447891951086,0.1928267734594146,False,False,False,True,False,False,True,TBC1D3P1-DHX40P1,TBC1D3C,False,564,0,False

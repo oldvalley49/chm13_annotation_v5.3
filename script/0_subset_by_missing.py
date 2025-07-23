@@ -14,7 +14,7 @@ chromosomes = ['chr1', 'chr2', 'chr3', 'chr4', 'chr5', 'chr6', 'chr7', 'chr8', '
                'chr11', 'chr12', 'chr13', 'chr14', 'chr15', 'chr16', 'chr17', 'chr18', 'chr19',
                'chr20', 'chr21', 'chr22', 'chrX']
 
-# because SMN-AS1 is a lncRNA and RBMY1B is in chrY
+# because RBMY1B is in chrY
 target_genes = target_genes - {'RBMY1B'}
 MANE_mapped_subset = MANE_mapped.get_feature_by_attribute('gene', target_genes)
 MANE_mapped_subset = MANE_mapped_subset.get_feature_by_attribute('seq_id', chromosomes)
