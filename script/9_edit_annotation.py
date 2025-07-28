@@ -37,7 +37,7 @@ for _, row in swaps_df.iterrows():
             mapped.get_uid(row['ID_add']),
             {'gene':[('ID', 'ID'), ('gene_name', 'gene') , ('dbxref', 'dbxref'), 
                 ('description','description'), ('copy_num_ID','copy_num_ID'),
-                ('gene_biotype', 'gene_biotype')], 
+                ('gene_biotype', 'gene_biotype'), ('gene', 'gene')], 
             'default':[('gene', 'gene')]},
             exclude_attributes = ['product']
         )
@@ -230,7 +230,7 @@ swaps_df.to_csv("log/paired/standard_standard.csv")
 chm13.save_as_gix("output/chm13_4.pkl")
 
 
-### standard standard
+### family
 logs = list()
 actions = list()
 chm13 = load_from_gix("output/chm13_4.pkl")
@@ -300,6 +300,7 @@ chm13.save_as_gix("output/chm13_5.pkl")
 
 
 # sanity check
+len(chm13.features)
 
 # output to gff3
-chm13.to_gff("output/chm13_edited.gff3")
+chm13.to_gff3("output/chm13_edited.gff3")

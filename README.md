@@ -1,4 +1,4 @@
-## Proposed Changes to the T2T-CHM13 Annotation
+## Proposed Changes for T2T-CHM13 Annotation v5.2
 
 ### Background
 To address the 285 genes from the MANE gene annotation in GRCh38 are missing in the current CHM13 annotation. 
@@ -7,14 +7,29 @@ To address the 285 genes from the MANE gene annotation in GRCh38 are missing in 
 
 1.  Update gene names to match the latest MANE versions
 
-    Some genes in the CHM13 annotation have outdated names. In particular, several LOC-designated genes have since been assigned standard gene names. We propose updating the gene names and gene biotypes to reflect current MANE nomenclature, while preserving the original CHM13 gene coordinates.
-    We also update gene biotypes because gene synonyms can differ in biotype (commonly between protein-coding and pseudogene, or occasionally protein-coding and lncRNA).
+    Some genes in the CHM13 annotation have outdated names. In particular, several LOC-designated genes have since been assigned standard gene names. We will be updating the gene names and gene biotypes to reflect current MANE nomenclature, while preserving the original CHM13 gene coordinates.
 
-    Entries to remove: `changes/1_synonyms_remove.csv`
+Following step 1, 107 MANE genes remain unaccounted for. The current CHM13 annotation was derived by lifting over RefSeq annotations from GRCh38 using LiftOff. We similarly lifted over the MANE annotation and examined whether these missing genes could be mapped onto CHM13.
 
-    Entries to add: `changes/1_synonyms_add.csv`
+The main reason why many of these genes were not lifted over was because there was already another gene annotated in the location. Since Liftoff does not allow two genes to be mapped to an overlapping location, this caused a subset of genes to not be mapped at all to CHM13. When comparing coordinates of Liftoff mapped coordinates of currently missing genes versus the existing genes in CHM13, we discovered INSERT_NUMBER overlaps between their genomic coordinates. In many of these cases, we would like to prioritize the missing MANE gene as opposed to the currently annotated gene. For example, in many cases, the current CHM13 annotation has a non protein-coding gene where a protein coding gene could be annotated. 
 
-Following step 1, 107 MANE genes remain unaccounted for. The current CHM13 annotation was derived by lifting over RefSeq annotations from GRCh38. We similarly lifted over the MANE annotation and examined whether these missing genes could be mapped onto CHM13.
+To maximize the biological integrity of annotation, we resolve such conflicts using the following logic:
+
+1. **Do the two overlapping genes overlap in the MANE annotation?**
+   - ✅ **Yes** →  
+     ➤ Keep **both** genes as overlapping in the CHM13 annotation as well.
+
+   - ❌ **No** →
+     2. **Are both overlapping genes present in the MANE annotation?**
+        - ✅ **Yes** →  
+          ➤ Keep the gene with the **longer protein sequence**.
+
+        - ❌ **Only one is in MANE** →  
+          ➤ Keep the gene that is in **MANE** and discard the other.
+
+
+
+
 
 2.  Resolve conflicts between MANE and overlapping LOC genes
 

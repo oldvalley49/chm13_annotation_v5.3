@@ -23,4 +23,3 @@ CHM13_subset = CHM13.get_feature_by_attribute('seq_id', chromosomes)
 MANE_mapped_subset.to_gff3("output/MANE_mapped_target.gff")
 CHM13_subset.to_gff3("output/CHM13_noY.gff")
 
-### Remember to replace RBMY1B manually, and to add back Y, and then sort them. 
