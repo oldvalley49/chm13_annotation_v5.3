@@ -9,7 +9,7 @@ MANE_genes = set(MANE_df['gene'].unique())
 
 # new CHM13
 
-CHM13 = gffpd.read_gff3("output/chm13_cleaned.gff3")
+CHM13 = gffpd.read_gff3("output/chm13_edited.gff3")
 CHM13 = CHM13.filter_feature_of_type(['gene'])
 CHM13_df = CHM13.attributes_to_columns()
 CHM13_genes = set(CHM13_df['gene'].unique())
