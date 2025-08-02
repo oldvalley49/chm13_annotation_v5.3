@@ -29,7 +29,7 @@ To maximize the biological integrity of annotation, we resolve such conflicts us
 
 ### T2T-CHM13 Gene Biotype Statistics (v5.2 vs. v5.3)
 
-| Gene Biotype              | Old Count | New Count |
+| Gene Biotype              | v5.2 Count | v5.3 Count |
 |--------------------------|-----------|-----------|
 | protein_coding           | 20,008    | 20,089    |
 | lncRNA                   | 18,389    | 18,385    |

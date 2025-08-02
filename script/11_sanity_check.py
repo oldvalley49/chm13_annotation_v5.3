@@ -25,3 +25,7 @@ missing_genes = MANE_genes - CHM13_genes
 missing_genes_old = MANE_genes - CHM13_old_genes
 
 print(f"missing genes: {len(missing_genes)}")
+
+with open("log/missing_MANE_genes.txt", "w") as f:
+    for gene in missing_genes:
+        f.write(f"{gene}\n")
