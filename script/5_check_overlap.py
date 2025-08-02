@@ -21,9 +21,8 @@ def genes_overlap(df_gff, gene1, gene2):
                 return True 
     return False
 
-for file in os.listdir('changes_paired/'):
-    fp = 'changes_paired/' + file
-    df = pd.read_csv(fp, index_col = 0)
-    df['overlapping_in_MANE'] = df.apply(lambda row: genes_overlap(MANE_df, row['gene_add'], row['gene_remove']), axis=1)
-    df.to_csv(fp)
+df = pd.read_csv("changes_paired/overlaps_synonyminfo.csv", index_col = 0)
+df['overlapping_in_MANE'] = df.apply(lambda row: genes_overlap(MANE_df, row['gene_add'], row['gene_remove']), axis=1)
+df.to_csv("changes_paired/overlaps_5.csv")
+
 
