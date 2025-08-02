@@ -28,6 +28,6 @@ To maximize the biological integrity of annotation, we resolve such conflicts us
           ➤ Keep the gene that is in **MANE** and discard the other.
 
 ### Contact
-Should you have any questions/suggestions, please feel free to either open a GitHub issue or contact Tomo Furutani<tfuruta1@jh.edu>, Hayden Ji<hji20.jh.edu>, or Celine Hoh<choh1@jhu.edu>. 
+Should you have any questions/suggestions, please feel free to either open a GitHub issue or contact Tomo Furutani (<tfuruta1@jh.edu>), Hayden Ji (<hji20@jh.edu>), or Celine Hoh (<choh1@jhu.edu>). 
 
 
