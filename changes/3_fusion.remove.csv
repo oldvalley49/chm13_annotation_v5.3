@@ -1,5 +1,0 @@
-,gene,chromosome,start,end,strand,biotype
-113,SOGA3-KIAA0408,chr6,128627333,128708261,-,lncRNA
-211,LOC84773-CYHR1,chr8,145619691,145635248,-,protein_coding
-433,ARMCX5-GPRASP2,chrX,101044304,101353019,+,protein_coding
-371,TBC1D3P1-DHX40P1,chr17,60831100,60887781,-,transcribed_pseudogene
