@@ -2,7 +2,7 @@
 
 ## Motivation
 
-We recently projected genes from the latest MANE gene annotation (v1.4) on GRCh38 onto the T2T-CHM13 v2.0 assembly, using Liftoff. 285 MANE genes were successfully lifted over but are currently missing from the T2T-CHM13 gene annotation v5.2. **The goal of this v5.3 update is to add as many of the missing MANE genes as possible.**
+We recently projected genes from the latest MANE gene annotation (v1.4) on GRCh38 onto the T2T-CHM13 v2.0 assembly, using Liftoff. 285 MANE genes were successfully lifted over but are currently missing from the T2T-CHM13 gene annotation v5.2. **The goal of this v5.3 update is to add as many of these missing MANE genes as possible.**
 
 ## Method
 
