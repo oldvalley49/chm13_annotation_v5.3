@@ -3,6 +3,5 @@ data
 output/
 output
 test/
-notebooks/
 STALE/
 __pycache__
