@@ -2,7 +2,7 @@ import pyranges as pr
 import gffpandas.gffpandas as gffpd
 
 MANE = gffpd.read_gff3("data/MANE.GRCh38.v1.4.refseq_genomic_filtered.gff")
-MANE_mapped = gffpd.read_gff3("output/1_mapped.gff_polished")
+MANE_mapped = gffpd.read_gff3("output/1_mapped.gff_polished") # liftoff output
 JHU = gffpd.read_gff3("data/chm13v2.0_RefSeq_Liftoff_v5.2.gff3")
 
 MANE = MANE.filter_feature_of_type(['gene'])
